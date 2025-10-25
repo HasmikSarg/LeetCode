@@ -1,90 +1,89 @@
-# LeetCode Solutions em Java
+# LeetCode Solutions in Java
 
-Este repositório contém as minhas soluções para vários problemas do LeetCode, implementadas em Java. Cada problema está numa pasta separada, contendo o ficheiro da solução Java e o seu próprio README com a descrição do problema.
+This repo has my solutions to various LeetCode problems, all written in Java. Each problem lives in its own folder with the Java solution file and a README explaining what the problem is about.
 
 ---
 
-## ✅ Problemas Resolvidos
+## ✅ Solved Problems
 
 ### 1. 53. Maximum Subarray  
-**Dificuldade:** Média
+**Difficulty:** Medium
 
-Dado um array de inteiros `nums`, encontre o subarray com a maior soma e retorne a sua soma.
+Given an integer array `nums`, find the subarray with the largest sum and return that sum.
 
-**Exemplo:**
+**Example:**
 ```
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
-Explanation: O subarray [4,-1,2,1] tem a maior soma 6.
+Explanation: The subarray [4,-1,2,1] has the largest sum of 6.
 ```
 
 ---
 
 ### 2. 121. Best Time to Buy and Sell Stock  
-**Dificuldade:** Fácil
+**Difficulty:** Easy
 
-Dado um array `prices` onde `prices[i]` é o preço de uma determinada ação no *i*-ésimo dia. Quer maximizar o seu lucro escolhendo um único dia para comprar uma ação e escolhendo um dia diferente no futuro para vender essa ação. Retorne o lucro máximo que pode obter com esta transação. Se não conseguir obter lucro, retorne 0.
+You're given an array `prices` where `prices[i]` is the price of a stock on the *i*-th day. You want to maximize your profit by picking one day to buy and a different future day to sell. Return the max profit you can get. If you can't make any profit, return 0.
 
-**Exemplo:**
+**Example:**
 ```
 Input: prices = [7,1,5,3,6,4]
 Output: 5
-Explanation: Comprar no dia 2 (preço = 1) e vender no dia 5 (preço = 6), lucro = 6-1 = 5.
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
 ```
 
 ---
 
 ### 3. 152. Maximum Product Subarray  
-**Dificuldade:** Média
+**Difficulty:** Medium
 
-Dado um array de inteiros `nums`, encontre um subarray que tenha o maior produto e retorne o produto. Os casos de teste são gerados de forma que a resposta caiba num inteiro de 32 bits.
+Given an integer array `nums`, find a subarray that has the largest product and return that product. The test cases guarantee the answer fits in a 32-bit integer.
 
-**Exemplo:**
+**Example:**
 ```
 Input: nums = [2,3,-2,4]
 Output: 6
-Explanation: [2,3] tem o maior produto 6.
+Explanation: [2,3] has the largest product of 6.
 ```
 
 ---
 
-## 🛠️ Como Usar
+## 🛠️ How to Use
 
-Para compilar e executar qualquer uma das soluções Java:
+To compile and run any of these Java solutions:
 
-### 1. Clone o repositório:
+### 1. Clone the repo:
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone <YOUR_REPO_URL>
 ```
 
-### 2. Navegue até a pasta do problema desejado:  
-Exemplo:
+### 2. Go to the problem folder you want:  
+Example:
 ```bash
 cd LeetCode-0aa310c2618bc02fc1237c4e2020412914899540/0053-maximum-subarray
 ```
 
-### 3. Compile o ficheiro Java:
+### 3. Compile the Java file:
 ```bash
 javac Solution.java
 ```
 
-### 4. Execute a solução (para testar, pode precisar de um método `main`):  
-As soluções são geralmente projetadas para serem executadas diretamente na plataforma LeetCode. Para testar localmente, pode ser necessário adicionar um método `main` temporário à classe `Solution` para chamar o método principal com alguns casos de teste.
+### 4. Run the solution:  
+These solutions are meant to run on LeetCode's platform. To test them locally, you'll need to add a `main` method to the `Solution` class with some test cases.
 
-**Exemplo de `main` para Maximum Subarray:**
-
+**Example `main` for Maximum Subarray:**
 ```java
 public static void main(String[] args) {
     Solution sol = new Solution();
     int[] nums1 = {-2,1,-3,4,-1,2,1,-5,4};
     System.out.println("Max Subarray Sum for [-2,1,-3,4,-1,2,1,-5,4]: " + sol.maxSubArray(nums1)); // Expected: 6
-
+    
     int[] nums2 = {1};
     System.out.println("Max Subarray Sum for [1]: " + sol.maxSubArray(nums2)); // Expected: 1
 }
 ```
 
-### 5. Depois de adicionar o `main`, compile e execute:
+### 5. After adding the `main` method, compile and run:
 ```bash
 javac Solution.java
 java Solution
@@ -92,14 +91,13 @@ java Solution
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a Licença MIT. Consulte o ficheiro `LICENSE` para mais detalhes.
+This project is under the MIT License. Check the `LICENSE` file for details.
 
 ---
 
 ### MIT License
-
 ```
 Copyright (c) 2025 Helena
 
